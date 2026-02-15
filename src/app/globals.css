@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base typography */
+body {
+  @apply font-body bg-white text-gray-900 antialiased;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading font-bold;
+}
+
+h1 {
+  @apply text-5xl md:text-6xl lg:text-6xl leading-tight;
+}
+
+h2 {
+  @apply text-4xl md:text-5xl leading-tight;
+}
+
+h3 {
+  @apply text-3xl md:text-4xl leading-tight;
+}
+
+h4 {
+  @apply text-2xl md:text-3xl leading-tight;
+}
+
+/* Paragraph styling */
+p {
+  @apply leading-relaxed;
+}
+
+/* Button utilities - using new color scheme */
+.btn {
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-md font-semibold transition-all duration-300 ease-in-out;
+}
+
+.btn-primary {
+  @apply btn bg-primary-500 text-white hover:bg-primary-600 active:scale-95;
+}
+
+.btn-secondary {
+  @apply btn bg-secondary-300 text-gray-900 hover:bg-secondary-400 active:scale-95;
+}
+
+.btn-outline {
+  @apply btn border-2 border-primary-500 text-primary-500 hover:bg-primary-50 active:scale-95;
+}
+
+.btn-accent {
+  @apply btn bg-accent-500 text-white hover:bg-accent-600 active:scale-95;
+}
+
+/* Section spacing utilities */
+.section {
+  @apply py-20 md:py-32 lg:py-40;
+}
+
+.section-light {
+  @apply bg-gray-50;
+}
+
+.section-primary {
+  @apply bg-primary-500 text-white;
+}
+
+.section-secondary {
+  @apply bg-secondary-100;
+}
+
+/* Link utilities */
+.link {
+  @apply text-primary-600 hover:text-primary-700 hover:underline transition-colors;
+}
+
