@@ -30,7 +30,7 @@ TailwindCSS
 
 ## Live Preview
 
-(Add your Vercel link here later)
+https://therapist-website-redesign-olbn62ron-abhikawles-projects.vercel.app
 
 ## What I Learned
 
